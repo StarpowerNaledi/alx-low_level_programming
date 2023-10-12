@@ -1,16 +1,18 @@
 #include "main.h"
 
-/**
- * Function that prints 10 times the numbers
- * from 0 t0 14
- * use putchar 3 times
- */
-
-void more_numbers(void)
+int main()
 {
-	int i;
-
-	for(i = 0, i <= 14, i++)
-		_putchar('0' + i, more_numbers);
-	 _putchar('\n');
+    int i, j;
+    // outer loop to print 10 rows
+    for (i = 0; i < 10; i++)
+    {
+        // inner loop to print numbers from 0 to 14
+        for (j = 0; j < 15; j++)
+        {
+            _putchar("%d", j);
+        }
+        // print a new line after each row
+        _putchar("\n");
+    }
+    return 0;
 }
