@@ -2,14 +2,14 @@
 #include "dog.h"
 
 /**
- * print_dog - function that prints the struct dog
- * @d: struct
- * Return nil is element is NULL
+ * print_dog - prints all member info of a struct dog
+ * @d: a variable of type struct dog
  */
 
 void print_dog(struct dog *d)
 {
-if (d == NULL) /* validate if d initiated correctly */
+
+	if (d == NULL) /* validate if d initiated correctly */
 		return;
 
 	(d->name == NULL) ? printf("Name: (nil)\n")
@@ -19,4 +19,5 @@ if (d == NULL) /* validate if d initiated correctly */
 
 	(d->owner == NULL) ? printf("Owner: (nil)\n")
 		: printf("Owner: %s\n", d->owner);
+
 }
