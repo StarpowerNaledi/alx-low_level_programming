@@ -6,7 +6,7 @@
  * @head: pointer
  *
  */
-void free_listint2(listint_t **head)
+size_t free_listint_safe(listint_t **h);
 {
 	listint_t *temp;
 
